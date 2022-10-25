@@ -8,8 +8,8 @@ module.exports = {
         'quicksand': ['Quicksand', 'sans-serif']
       },
       colors:{
-        'primary': '#2ec4b6',
-        'secondary': '#ff9f1c'
+        'primary': '#839048',
+        'secondary': '#FDB271'
       },
       transitionProperty:{
         'left': 'left'
