@@ -39,7 +39,7 @@ function Navbar() {
           <div className='flex flex-col md:flex-row items-start md:items-center space-y-5 md:space-y-0 md:space-x-10'>
             {
               navLinks.map(({id, name, path})=> (
-                <Link to={path} key={id} className='text-[18px] font-[600] font-quicksand '>{name}</Link>
+                <Link to={path} key={id} className='text-[18px] font-[600] font-quicksand ' onClick={() => setToggle(!toggle)}>{name}</Link>
               ))
             }
           </div>
