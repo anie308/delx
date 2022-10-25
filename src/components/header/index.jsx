@@ -27,9 +27,9 @@ function Navbar() {
     },
   ]
   return (
-    <div className='md:sticky md:top-0 z-10 bg-secondary md:p-[15px_40px] flex flex-col md:flex-row  items-center justify-between shadow'>
+    <div className=' md:top-0 z-10  md:p-[18px_40px] flex flex-col md:flex-row  items-center justify-between '>
       <div className='flex p-[15px] md:p-0  items-center justify-between w-full md:w-fit'>
-        <div className='font-quicksand font-[900] text-[25px] cursor-pointer text-white'><Link to='/'>Delx Academy</Link></div>
+        <div className='font-quicksand font-[900] text-[28px] cursor-pointer text-primary uppercase'><Link to='/'>Delx Academy</Link></div>
         <div className='md:hidden  cursor-pointer' onClick={() => setToggle(!toggle)}>
           {toggle? <FaTimes className='text-[25px]'/> : <FaBars className='text-[25px]'/>}
         </div>
@@ -39,12 +39,12 @@ function Navbar() {
           <div className='flex flex-col md:flex-row items-start md:items-center space-y-5 md:space-y-0 md:space-x-10'>
             {
               navLinks.map(({id, name, path})=> (
-                <Link to={path} key={id} className='text-[16px] font-[600] font-quicksand '>{name}</Link>
+                <Link to={path} key={id} className='text-[18px] font-[600] font-quicksand '>{name}</Link>
               ))
             }
           </div>
           <div>
-            <Link to='/join-us' className='bg-white p-[8px_22px] font-quicksand font-[600] text-primary  rounded-[4px] cursor-pointer text-[18px]'>Join Us</Link>
+            <Link to='/join-us' className='bg-primary p-[10px_24px] font-quicksand font-[600] text-white  rounded-[4px] cursor-pointer text-[18px]'>J0IN US</Link>
           </div>
       </div>
     </div>

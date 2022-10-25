@@ -1,5 +1,6 @@
 import React from 'react'
 import About from '../components/about'
+import Card from '../components/blog'
 import HomeHero from '../components/homehero'
 
 function Home() {
@@ -7,6 +8,7 @@ function Home() {
     <div >
       <HomeHero/>
       <About/>
+      <Card/>
     </div>
   )
 }
