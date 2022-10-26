@@ -25,7 +25,7 @@ function Card() {
               <button className="mt-[20px]">
                 <Link
                   to={`/blog/${slug}`}
-                  className="bg-secondary text-white p-[8px_10px] font-quicksand rounded-[20px]"
+                  className="bg-secondary text-white p-[8px_10px] text-[14px] font-quicksand rounded-[20px]"
                 >
                   Read More
                 </Link>

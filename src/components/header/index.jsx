@@ -31,11 +31,14 @@ function Navbar() {
       <div className='flex p-[15px] lg:p-0  items-center justify-between w-full lg:w-fit'>
         <div className='font-quicksand font-[900] text-[28px] cursor-pointer text-primary '><Link to='/'>Delx Academy</Link></div>
         <div className='lg:hidden  cursor-pointer' onClick={() => setToggle(!toggle)}>
-          {toggle? <FaTimes className='text-[25px]'/> : <FaBars className='text-[25px]'/>}
+         <FaBars className='text-[25px] text-primary'/>
         </div>
       </div>
-      <div className= {`${toggle? 'left-0' : 'left-[-100%] lg:left-0'} transition-left absolute lg:relative top-0 flex flex-col lg:flex-row items-start lg:items-center space-y-10 lg:space-y-0 lg:space-x-10 w-[220px] sm:w-[300px] lg:w-fit h-full lg:h-fit bg-gray-100 lg:bg-transparent p-[20px] lg:p-0`}>
-      <div className='flex lg:hidden font-quicksand font-[900] text-[25px] cursor-pointer'>Delx Academy</div>
+      <div className= {`${toggle? 'left-0' : 'left-[-100%] lg:left-0'} transition-left fixed lg:relative top-0 flex flex-col lg:flex-row items-start lg:items-center space-y-10 lg:space-y-0 lg:space-x-10 w-full lg:w-fit h-screen lg:h-fit bg-gray-100 lg:bg-transparent p-[20px] lg:p-0`}>
+      <div className='flex lg:hidden  items-center justify-between w-full'>
+      <div className='flex font-quicksand font-[900] text-[25px] cursor-pointer'>Delx Academy</div>
+      <div><FaTimes className='text-[25px] text-primary' onClick={() => setToggle(!toggle)}/></div>
+      </div>
           <div className='flex flex-col lg:flex-row items-start lg:items-center space-y-5 lg:space-y-0 lg:space-x-10'>
             {
               navLinks.map(({id, name, path})=> (
@@ -44,7 +47,7 @@ function Navbar() {
             }
           </div>
           <div>
-            <Link to='/join-us' className='bg-primary p-[10px_24px] font-quicksand font-[600] text-white  rounded-[4px] cursor-pointer text-[18px]'>Join Us</Link>
+            <Link to='/join-us' className='bg-primary p-[10px_24px] font-quicksand font-[600] text-white  rounded-[4px] cursor-pointer text-[18px]' onClick={() => setToggle(!toggle)}>Join Us</Link>
           </div>
       </div>
     </div>
