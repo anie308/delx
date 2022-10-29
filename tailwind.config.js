@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-
   theme: {
     extend: {
       fontFamily:{
@@ -9,7 +9,8 @@ module.exports = {
       },
       colors:{
         'primary': '#839048',
-        'secondary': '#FDB271'
+        'secondary': '#FDB271',
+        'dark': '#393953'
       },
       transitionProperty:{
         'left': 'left'

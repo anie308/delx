@@ -9,7 +9,7 @@ import Single from './pages/Blog/[slug]';
 import All from './pages/Blog/All'
 function App() {
   return (
-    <div className="App">
+    <div className=" transition duration-500">
       
       <Router>
       <Navbar/>
