@@ -6,7 +6,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import JoinUs from './pages/JoinUs';
 import Single from './pages/Blog/[slug]';
-
+import All from './pages/Blog/All'
 function App() {
   return (
     <div className="App">
@@ -18,6 +18,7 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/blog/:slug' element={<Single/>}/>
+          <Route path='/blog' element={<All/>}/>
           <Route path='/join-us' element={<JoinUs/>}/>
         </Routes>
         <Footer/>

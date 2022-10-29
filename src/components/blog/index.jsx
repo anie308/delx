@@ -6,11 +6,12 @@ function Card() {
   return (
     <div className="p-[50px_40px] bg-green-50">
       <div className=" flex  items-center justify-center font-quicksand font-[800] text-[30px]  md:text-[50px]">Blog</div>
-      <div className="mt-[25px] flex w-full  items-center justify-center px-[10px]">
+      <div className="mt-[20px] flex w-full  items-center justify-center px-[10px]">
         <div className="w-full grid  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5">
-          {fakeData.map(({ id, title, content, slug, category }) => (
+          {fakeData.slice(0,4)
+          .map(({ id, title, content, slug, category }) => (
             <div
-              className="bg-white shadow rounded-[10px] w-[300px] h-[270px] cursor-pointer p-[40px_25px]"
+              className="bg-gradient-to-r from-green-50 to-green-200 shadow rounded-[10px] w-[300px] h-[270px] cursor-pointer p-[40px_25px]"
               key={id}
             >
               <p className="font-[800] capitalise font-quicksand text-[18px]">
@@ -33,6 +34,9 @@ function Card() {
             </div>
           ))}
         </div>
+      </div>
+      <div className="w-full flex items-center justify-center mt-[50px]">
+        <Link to='/blog' className="bg-secondary p-[10px_30px] text-white rounded-full font-quicksand text-[16px]">View More</Link>
       </div>
     </div>
   );

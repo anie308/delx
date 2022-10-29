@@ -27,7 +27,7 @@ function Navbar() {
     },
   ]
   return (
-    <div className=' lg:top-0 z-10  lg:p-[18px_40px] flex flex-col lg:flex-row  items-center justify-between '>
+    <div className='sticky top-0 z-10 bg-white  lg:p-[18px_40px] flex flex-col lg:flex-row  items-center justify-between '>
       <div className='flex p-[15px] lg:p-0  items-center justify-between w-full lg:w-fit'>
         <div className='font-quicksand font-[900] text-[28px] cursor-pointer text-primary '><Link to='/'>Delx Academy</Link></div>
         <div className='lg:hidden  cursor-pointer' onClick={() => setToggle(!toggle)}>
@@ -47,7 +47,7 @@ function Navbar() {
             }
           </div>
           <div>
-            <Link to='/join-us' className='bg-primary p-[10px_24px] font-quicksand font-[600] text-white  rounded-[4px] cursor-pointer text-[18px]' onClick={() => setToggle(!toggle)}>Join Us</Link>
+            <Link to='/join-us' className='bg-primary p-[10px_24px] font-quicksand font-[600] text-white  rounded-full cursor-pointer text-[18px]' onClick={() => setToggle(!toggle)}>Join Us</Link>
           </div>
       </div>
     </div>
