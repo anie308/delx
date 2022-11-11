@@ -7,8 +7,7 @@ export const apiSlice = createApi({
     baseQuery: fetchBaseQuery({baseUrl: baseURL}),
     endpoints:(builder) => ({
         posts: builder.query({
-            query:()=> '/posts',
-            
+            query:()=> '/posts', 
         })
     })
     
