@@ -31,7 +31,7 @@ function Navbar() {
     },
   ]
   return (
-    <div className='sticky top-0 z-10  bg-white dark:bg-dark   lg:p-[18px_40px] flex flex-col lg:flex-row  items-center justify-between transition duration-500'>
+    <div className='sticky top-0 z-10 shadow-none md:shadow bg-white dark:bg-dark   lg:p-[18px_40px] flex flex-col lg:flex-row  items-center justify-between transition duration-500'>
       <div className='flex p-[15px] lg:p-0  items-center justify-between w-full lg:w-fit'>
         <div className='font-quicksand font-[900] text-[28px] cursor-pointer text-primary '><Link to='/'>Delx Academy</Link></div>
         <div className='flex items-center space-x-5'><div className='flex md:hidden cursor-pointer h-fit w-fit bg-primary p-[5px] rounded-full' onClick={()=> {
