@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Image  from  '../../assets/123.png'
+import Image  from  '../../assets/123.svg'
 
 function HomeHero() {
   return (
