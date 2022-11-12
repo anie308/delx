@@ -51,7 +51,7 @@ function Card() {
     </div>
   }
   return (
-    <div className="p-[50px_40px] bg-green-50">
+    <div className="px-[15px] p-[50px_40px] bg-green-50">
       <div className=" flex  items-center justify-center font-quicksand font-[800] text-[30px]  md:text-[50px]">Blog</div>
       <div className="mt-[20px] flex w-full  items-center justify-center px-[10px]">
         <div className="w-full">
