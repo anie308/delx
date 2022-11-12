@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Image from '../../assets/123.png'
+import Image  from  '../../assets/123.png'
 
 function HomeHero() {
   return (
@@ -12,9 +12,9 @@ function HomeHero() {
           <Link to='/join-us' className='bg-secondary p-[8px_28px] text-[20px] md:p-[8px_48px] font-[700] text-white cursor-pointer rounded-[5px] font-quicksand'>Join Us</Link>
         </button>
       </div>
-      <div className='flex-1 bg-white  rounded-[20px] md:h-[350px] w-full md:w-[300px] flex items-center justify-center shadow'>
+      <div className='flex-1 bg-white  rounded-[20px] md:h-[350px] w-full  flex items-center justify-center shadow'>
         <img src={Image} alt="" className='w-full h-full object-cover'  />
-      </div>
+           </div>
     </div>
   )
 }
