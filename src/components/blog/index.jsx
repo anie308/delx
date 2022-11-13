@@ -27,10 +27,10 @@ function Card() {
       <p className="font-[800] capitalise font-quicksand text-[18px]">
         {title}
       </p>
-      <p className="mt-[4px] text-[15px] font-quicksand h-full">
+      <p className="mt-[4px] text-[15px] font-quicksand">
         {content.substring(0, 120) + "..."}
       </p>
-      <p className=" mt-[10px] flex items-center  ">
+      <p className=" mt-[10px] flex items-center">
         <Link to={`/blog-categries/${category}`} className='text-[13px] bg-green-200 rounded-[20px] h-[15px] px-[8px] font-quicksand flex items-center justify-center w-fit text-primary py-[4px]'>{category}</Link>
       </p>
       <button className="mt-[20px]">
