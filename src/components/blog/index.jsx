@@ -27,7 +27,7 @@ function Card() {
       <p className="font-[800] capitalise font-quicksand text-[18px]">
         {title}
       </p>
-      <p className="mt-[4px] text-[15px] font-quicksand h-[100px]">
+      <p className="mt-[4px] text-[15px] font-quicksand h-full">
         {content.substring(0, 120) + "..."}
       </p>
       <p className=" mt-[10px] flex items-center  ">
@@ -36,7 +36,7 @@ function Card() {
       <button className="mt-[20px]">
         <Link
           to={`/blog/${slug}`}
-          className="bg-secondary text-white p-[8px_10px] text-[14px] font-quicksand rounded-[20px] mb-[20px]"
+          className="bg-secondary text-white p-[8px_10px] text-[14px] font-quicksand rounded-[20px]"
         >
           View Full Post
         </Link>
