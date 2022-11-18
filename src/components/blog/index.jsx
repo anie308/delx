@@ -4,6 +4,7 @@ import {default as api} from '../../services/apiSlice'
 
 function Card() {
   const { data, isError, isLoading, isSuccess } = api.usePostsQuery();
+  
   const posts = data?.posts
   console.log(posts)
   let postDisplay;

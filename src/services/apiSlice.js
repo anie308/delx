@@ -9,6 +9,13 @@ export const apiSlice = createApi({
     endpoints:(builder) => ({
         posts: builder.query({
             query:()=> '/posts', 
+        }),
+        relatedPosts: builder.query({
+            query: ({id}) => ({
+                url: `/related-posts/${id}`,
+                method: "GET",
+                body: id 
+            }),
         })
     })
     
